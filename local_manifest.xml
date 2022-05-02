@@ -1,0 +1,45 @@
+nifest>
+          
+     <remote name="kreio"
+            fetch="https://github.com/kreioroscape"/>
+     <remote name="ras"
+            fetch="https://github.com/rasenss"/>
+     <remote name="PixelOS"
+            fetch="https://github.com/PixelOS-Devices" />
+     <remote name="PixelOS"
+            fetch="https://github.com/PixelOS-Pixelish" />
+     <remote name="gr"
+            fetch="https://github.com/ghostrider-reborn" />
+     <remote name="proto" 
+           fetch="https://github.com/kdrag0n" />
+     <remote  name="awaken"
+           fetch="https://github.com/ProjectAwaken" />
+
+   <!-- Remove Repo's -->
+        <remove-project name="platform/hardware/nxp/nfc" />
+        <remove-project name="platform/hardware/nxp/secure_element" />
+  
+  <!-- removed -->
+       <remove-project name="platform_frameworks_base" />
+       <remove-project name="platform_frameworks_av" />
+
+  <!-- Device Trees -->
+        <project name="device_xiaomi_ginkgo" path="device/xiaomi/ginkgo" remote="kreio" revision="awaken" /> 
+         
+  <!-- Vendor Trees -->
+        <project name="vendor_xiaomi_ginkgo" path="vendor/xiaomi/ginkgo" remote="kreio" revision="twelve" />        
+        
+  <!-- Kernel Trees -->
+        <project name="kernel_xiaomi_ginkgo" path="kernel/xiaomi/ginkgo" remote="kreio" revision="twelve" />
+
+
+  <!-- Clang & MiuiCamera --> 
+        <project name="android_vendor_miuicamera" path="vendor/miuicamera" remote="ras" revision="arrow-12.0-a3"/>
+
+  <!-- Fwb & Av -->
+        <project name="platform_frameworks_base" path="frameworks/base" remote="ras" revision="12.x" />
+        <project name="platform_frameworks_av" path="frameworks/av" remote="ras" revision="12.x" />   
+         
+        <remove-project name="manifest" />
+        <project path="manifest" name="manifest" remote="kreio" />
+</manifest>
