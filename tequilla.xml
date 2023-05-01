@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- tequillaOS 2.x manifest for sweet -->
+
+    <!-- External remotes -->
+    <remote name="kreio" fetch="https://github.com/kreiorogit" />
+    
+    <remote name="aosp_playground" fetch="https://github.com/aosp_playground" />
+
+    <!-- Device tree -->
+    <project path="device/xiaomi/sweet" name="android_device_xiaomi_sweet" revision="thirteen" remote="kreio" />
+
+    <!-- Kernel source -->
+    <project path="kernel/xiaomi/sweet" name="android_kernel_xiaomi_sweet" revision="thirteen" remote="kreio" />
+
+    <!-- Vendor blobs -->
+    <project path="vendor/xiaomi/sweet" name="android_vendor_xiaomi_sweet" revision="thirteen" remote="kreio" />
+    
+    <!-- Clang & MiuiCamera --> 
+    <project path="android_vendor_xiaomi_sweet-miuicamera" path="android_vendor_xiaomi_sweet-miuicamera" remote="aosp_playground" revision="thirteen" />
